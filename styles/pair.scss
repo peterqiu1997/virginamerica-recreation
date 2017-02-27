@@ -1,0 +1,79 @@
+@import "variables";
+
+.pair {
+  width: 100%;
+  height: auto;
+  background-color: $c__grey--light;
+  border-top: 1px solid $c__grey;
+
+  .element {
+    vertical-align: top;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 200px;
+    box-sizing: border-box;
+    width: 45%;
+
+    &.element--right { border-left: 1px solid $c__grey; }
+
+    display: inline-block; 
+    padding-left: 20px;
+
+    .button {
+      display: inline-block;
+      width: 150px;
+      height: 40px;
+      margin-top: 20px;
+      line-height: 40px;
+      text-align: center;
+      border: 1px solid $c__grey;
+
+      &:hover {
+        cursor: pointer;
+        border: 1px solid $c__purple--dark;
+      }
+    }
+
+    .element__title {
+      color: $c__purple--dark;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .element__text {
+      line-height: 2;
+      font-size: 13px;
+      font-weight: 600;
+
+      .news {
+        color: black;
+        font-weight: 2000;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .element__text--link {
+      &:hover {
+        cursor: pointer;
+        color: $c__purple--dark;
+        transition: color 250ms;
+      }
+    }
+
+    @media (max-width: 860px) {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid $c__white;
+      text-align: center;
+      padding-left: 0;
+      margin-bottom: 0;
+
+      &.element--right { border-left: 0; }
+    }
+  }
+}

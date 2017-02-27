@@ -1,23 +1,12 @@
-import React, { PropTypes } from 'react';
-
+import React from 'react';
 import Home from './Home';
 
-
-function Layout({ children }) {
+function Layout() {
   return (
     <div>
-      {children || <Home />}
+      <Home />
     </div>
   );
 }
 
-Layout.defaultProps = {
-  children: null,
-};
-
-Layout.propTypes = {
-  children: PropTypes.element,
-};
-
 export default Layout;
-

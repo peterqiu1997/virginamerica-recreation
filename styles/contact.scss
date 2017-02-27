@@ -1,0 +1,28 @@
+@import "variables";
+
+.contact--container {
+  background-color: $c__grey--light;
+  height: 60px;
+  width: 100%;
+  padding: 15px;
+  padding-top: 20px;
+  font-size: 24px;
+
+  .fa {
+    margin-right: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $c__white;
+      transition: background-color 0.5s;
+    }
+  }
+
+  .contact { display: inline-block; }
+
+  .contact__copyright {
+    position: absolute;
+    right: 15px;
+    font-size: 12px;
+  }
+}

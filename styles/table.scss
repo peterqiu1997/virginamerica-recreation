@@ -1,0 +1,21 @@
+@import "variables";
+
+.table--wrapper {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid $c__grey;
+  background-color: $c__grey--light;
+  overflow-x: auto;
+
+  .table {
+    th { 
+      vertical-align: top;
+      padding: 5px; 
+    }
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 2;
+  }
+}
