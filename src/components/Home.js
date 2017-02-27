@@ -102,11 +102,12 @@ export default class Home extends Component {
             <i className="fa fa-snapchat-square" />
             <i className="fa fa-linkedin-square" />
           </div>
-          <div className="contact contact__copyright">
+        </div>
+        <div className="footer">
+          <div className="footer__copyright">
             (c) 2017 Virgin America
           </div>
         </div>
-        <div className="footer" />
       </div>
     );
   }
