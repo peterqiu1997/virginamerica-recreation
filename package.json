@@ -6,6 +6,7 @@
     "build": "webpack -p --env=prod --progress --profile --colors",
     "clean": "rm -rf ./dist",
     "dev": "NODE_ENV=dev webpack-dev-server",
+    "start": "npm run dev",
     "lint": "eslint src",
     "postinstall": "cp node_modules/normalize.css/normalize.css styles/vendor",
     "test": "jest"
