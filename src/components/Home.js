@@ -36,7 +36,7 @@ export default class Home extends Component {
               Get Deals, Offers, And More.
             </div>
             <div className="element__text">
-              Sign up to receive special fares, promotional offers, and news.<br />
+              <span className="element__text--link">Sign up to receive special fares, promotional offers, and news.</span><br />
               <span className="element__text element__text--link">Virgin America&apos;s Privacy Policy</span>
             </div>
             <div className="button">

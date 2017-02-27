@@ -8,14 +8,20 @@
   overflow-x: auto;
 
   .table {
-    th { 
-      vertical-align: top;
-      padding: 5px; 
-    }
     text-align: left;
     width: 100%;
     padding: 10px;
     font-size: 12px;
     line-height: 2;
+
+    th { 
+      vertical-align: top;
+      padding: 5px; 
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
   }
 }
